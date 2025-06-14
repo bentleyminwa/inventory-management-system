@@ -20,10 +20,19 @@ export default function Logo({ panelOpen, setPanelOpen }: LogoProps) {
                 height={100}
             />
 
-            <PanelLeftClose
-                className='w-5 cursor-pointer'
+            <Image
+                src={'/icons/panel-left-close.svg'}
+                alt=''
+                width={20}
+                height={20}
                 onClick={toggleSidebar}
+                className='cursor-pointer'
             />
+
+            {/* <PanelLeftClose
+                className='w-5 cursor-pointer border'
+                onClick={toggleSidebar}
+            /> */}
         </div>
     ) : (
         <div className='flex items-start'>

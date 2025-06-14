@@ -19,10 +19,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body className={`${quicksand.className} antialiased flex`}>
-                <Sidebar />
-                <main className='bg-gray-50 text-secondary-foreground'>
-                    {children}
+            <body className={`${quicksand.className} antialiased`}>
+                <main className='w-screen min-h-screen flex'>
+                    <Sidebar />
+                    <section className='bg-[#f6f6f6] text-secondary-foreground w-full'>
+                        {children}
+                    </section>
                 </main>
             </body>
         </html>
