@@ -1,4 +1,4 @@
-import { PanelLeftClose, PanelRightClose } from 'lucide-react';
+import { PanelRightClose } from 'lucide-react';
 import Image from 'next/image';
 
 interface LogoProps {
@@ -28,11 +28,6 @@ export default function Logo({ panelOpen, setPanelOpen }: LogoProps) {
                 onClick={toggleSidebar}
                 className='cursor-pointer'
             />
-
-            {/* <PanelLeftClose
-                className='w-5 cursor-pointer border'
-                onClick={toggleSidebar}
-            /> */}
         </div>
     ) : (
         <div className='flex items-start'>
