@@ -82,3 +82,25 @@ export const suppliers = [
         address: '123 Wine Valley Rd, Napa, CA',
     },
 ];
+
+export const wineStockDistribution = [
+    { wine: 'Red', bottles: 1200, fill: 'var(--color-chart-1)' },
+    { wine: 'White', bottles: 900, fill: 'var(--color-chart-2)' },
+    { wine: 'Rose', bottles: 400, fill: 'var(--color-chart-3)' },
+    { wine: 'Sparkling', bottles: 250, fill: 'var(--color-chart-4)' },
+];
+
+export const monthlySales = [
+    { month: 'Jan', bottlesSold: 500 },
+    { month: 'Feb', bottlesSold: 620 },
+    { month: 'Mar', bottlesSold: 570 },
+    { month: 'Apr', bottlesSold: 800 },
+    { month: 'May', bottlesSold: 740 },
+    { month: 'Jun', bottlesSold: 680 },
+];
+
+export const topSellingWines = [
+    { name: 'Cabernet Sauvignon 2022', bottlesSold: 680 },
+    { name: 'Chardonnay Reserve 2021', bottlesSold: 540 },
+    { name: 'Rosé Sparkle 2023', bottlesSold: 320 },
+];
