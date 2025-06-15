@@ -13,7 +13,7 @@ export default function Account({ panelOpen }: AccountProps) {
         <Popover>
             <PopoverTrigger asChild>
                 <div className='flex items-center gap-3 cursor-pointer text-xs w-full hover:bg-accent rounded-lg p-2'>
-                    <Avatar className='w-10 h-10'>
+                    <Avatar>
                         <AvatarImage
                             src='https://github.com/shadcn.png'
                             className='w-10 h-10 rounded-full'

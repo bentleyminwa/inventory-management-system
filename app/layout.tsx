@@ -1,4 +1,5 @@
 import Sidebar from '@/components/sidebar';
+import { Provider } from '@/context/store';
 import type { Metadata } from 'next';
 import { Quicksand } from 'next/font/google';
 import './globals.css';
@@ -20,12 +21,14 @@ export default function RootLayout({
     return (
         <html lang='en' className='overflow-x-hidden'>
             <body className={`${quicksand.className} antialiased`}>
-                <main className='w-screen min-h-screen flex'>
-                    <Sidebar />
-                    <section className='bg-background text-secondary-foreground w-full'>
-                        {children}
-                    </section>
-                </main>
+                <Provider>
+                    <main className='w-screen min-h-screen flex'>
+                        <Sidebar />
+                        <section className='bg-background text-secondary-foreground w-full'>
+                            {children}
+                        </section>
+                    </main>
+                </Provider>
             </body>
         </html>
     );

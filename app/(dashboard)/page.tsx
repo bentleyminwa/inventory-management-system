@@ -16,7 +16,7 @@ export default function Dashboard() {
     };
 
     return (
-        <main className='w-11/12 mx-auto'>
+        <main>
             <header className='my-10 space-y-10'>
                 <h1 className='text-2xl'>
                     Welcome Back,{' '}
