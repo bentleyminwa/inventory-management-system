@@ -13,7 +13,7 @@ export default function PurchaseeOrdersLayout({
         <section
             className={`${
                 panelOpen && 'ml-64'
-            } flex-1 transition-all duration-300 ml-20 px-10`}
+            } flex-1 transition-all duration-300 mt-10 ml-20 px-10`}
         >
             {children}
         </section>

@@ -17,7 +17,7 @@ export default function Dashboard() {
 
     return (
         <main>
-            <header className='my-10 space-y-10'>
+            <header className='mb-10 space-y-10'>
                 <h1 className='text-2xl'>
                     Welcome Back,{' '}
                     <span className='font-semibold text-primary'>Quan!</span>
