@@ -1,4 +1,14 @@
-import { Archive, Banknote, House, Truck, Wallet } from 'lucide-react';
+import {
+    Archive,
+    Banknote,
+    House,
+    List,
+    ShoppingBag,
+    Store,
+    Truck,
+    Wallet,
+    WalletCards,
+} from 'lucide-react';
 
 export const navItems = [
     {
@@ -30,5 +40,32 @@ export const navItems = [
         label: 'Suppliers',
         path: '/suppliers',
         icon: <Truck />,
+    },
+];
+
+export const dashboardLinks = [
+    {
+        label: 'Inventory',
+        path: '/inventory',
+        icon: <List />,
+        description: 'View and Manage all your Inventory',
+    },
+    {
+        label: 'Sales Orders',
+        path: '/sales-orders',
+        icon: <WalletCards />,
+        description: 'View all of your recent Sales',
+    },
+    {
+        label: 'Purchase Orders',
+        path: '/purchase-orders',
+        icon: <ShoppingBag />,
+        description: 'View your recent Purchase Orders',
+    },
+    {
+        label: 'Suppliers',
+        path: '/suppliers',
+        icon: <Store />,
+        description: 'Vendors we order from',
     },
 ];
