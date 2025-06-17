@@ -2,7 +2,11 @@ export const wines = [
     {
         id: 'wine_1',
         name: 'Cabernet 2022',
-        imageSrc: '/images/wine1.jpg',
+        imageSrc: {
+            small: '/images/products/wine-1-sm.png',
+            medium: '/images/products/wine-1-md.png',
+            large: '/images/products/wine-1-lg.png',
+        },
         type: 'Red',
         vintage: 2022,
         stock: 480,
@@ -13,7 +17,11 @@ export const wines = [
     {
         id: 'wine_2',
         name: 'Chardonnay 2021',
-        imageSrc: '/images/wine2.jpg',
+        imageSrc: {
+            small: '/images/products/wine-2-sm.png',
+            medium: '/images/products/wine-2-md.png',
+            large: '/images/products/wine-2-lg.png',
+        },
         type: 'White',
         vintage: 2021,
         stock: 210,
@@ -24,7 +32,11 @@ export const wines = [
     {
         id: 'wine_3',
         name: 'Pinot Noir 2021',
-        imageSrc: '/images/wine3.jpg',
+        imageSrc: {
+            small: '/images/products/wine-3-sm.png',
+            medium: '/images/products/wine-3-md.png',
+            large: '/images/products/wine-3-lg.png',
+        },
         type: 'Red',
         vintage: 2021,
         stock: 180,
@@ -35,7 +47,11 @@ export const wines = [
     {
         id: 'wine_4',
         name: 'Sauvignon Blanc 2022',
-        imageSrc: '/images/wine4.jpg',
+        imageSrc: {
+            small: '/images/products/wine-4-sm.png',
+            medium: '/images/products/wine-4-md.png',
+            large: '/images/products/wine-4-lg.png',
+        },
         type: 'White',
         vintage: 2021,
         stock: 300,

@@ -28,10 +28,10 @@ export default function InventoryTable() {
                     <TableRow key={wine.id}>
                         <TableCell>
                             <Image
-                                src={wine.imageSrc}
+                                src={wine.imageSrc.small}
                                 alt={wine.name}
-                                width={50}
-                                height={50}
+                                width={60}
+                                height={60}
                                 className='rounded-lg'
                             />
                         </TableCell>
