@@ -61,7 +61,7 @@ export const wines = [
     },
 ];
 
-export const salesOrders = [
+export const sales = [
     {
         id: 'so_001',
         customerName: 'Olive Grove Bistro',
@@ -71,7 +71,40 @@ export const salesOrders = [
             { wineId: 'wine_2', quantity: 40 },
         ],
         total: 2280.0,
-        status: 'Shipped',
+        status: 'new',
+    },
+    {
+        id: 'so_002',
+        customerName: 'The Wine Cellar',
+        date: '2025-06-02',
+        items: [
+            { wineId: 'wine_3', quantity: 120 },
+            { wineId: 'wine_4', quantity: 80 },
+        ],
+        total: 1080.0,
+        status: 'confirmed',
+    },
+    {
+        id: 'so_003',
+        customerName: 'The Wine Cellar',
+        date: '2025-06-03',
+        items: [
+            { wineId: 'wine_1', quantity: 120 },
+            { wineId: 'wine_2', quantity: 80 },
+        ],
+        total: 1320.0,
+        status: 'shipped',
+    },
+    {
+        id: 'so_004',
+        customerName: 'Olive Grove Bistro',
+        date: '2025-06-04',
+        items: [
+            { wineId: 'wine_3', quantity: 60 },
+            { wineId: 'wine_4', quantity: 40 },
+        ],
+        total: 660.0,
+        status: 'delivered',
     },
 ];
 
