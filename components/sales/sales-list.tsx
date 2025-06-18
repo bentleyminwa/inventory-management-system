@@ -51,13 +51,19 @@ const SalesList = () => {
             </div>
 
             <ul className='flex flex-col gap-5'>
-                {filteredSales.map((sale) => {
-                    return (
-                        <li key={sale.id} className='last:mb-5'>
-                            <SalesCard sale={sale} />
-                        </li>
-                    );
-                })}
+                {filteredSales.length === 0 ? (
+                    <div>
+                        <p>No sales found.</p>
+                    </div>
+                ) : (
+                    filteredSales.map((sale) => {
+                        return (
+                            <li key={sale.id} className='last:mb-5'>
+                                <SalesCard sale={sale} />
+                            </li>
+                        );
+                    })
+                )}
             </ul>
         </section>
     );
