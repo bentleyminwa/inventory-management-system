@@ -1,4 +1,4 @@
-import { Sale } from '@/types';
+import { Purchase, Sale, Supplier } from '@/types';
 
 export const wines = [
     {
@@ -110,28 +110,73 @@ export const sales: Sale[] = [
     },
 ];
 
-export const purchaseOrders = [
+export const purchases: Purchase[] = [
     {
         id: 'po_001',
         supplierId: 'sup_001',
         supplier: 'VinoCraft Co.',
         date: '2025-05-28',
         items: [
-            { itemName: 'Oak Barrels', quantity: 10 },
-            { itemName: 'Empty Bottles (750ml)', quantity: 1000 },
+            { name: 'Oak Barrels', quantity: 10 },
+            { name: 'Empty Bottles (750ml)', quantity: 1000 },
         ],
-        status: 'Received',
+        status: 'recieved',
         total: 900.0,
+    },
+    {
+        id: 'po_002',
+        supplierId: 'sup_002',
+        supplier: 'VinoVine Co.',
+        date: '2025-05-29',
+        items: [
+            { name: 'Bottle Labels', quantity: 1000 },
+            { name: 'Corks', quantity: 1000 },
+        ],
+        status: 'sent',
+        total: 1200.0,
+    },
+    {
+        id: 'po_003',
+        supplierId: 'sup_002',
+        supplier: 'VinoVine Co.',
+        date: '2025-05-30',
+        items: [
+            { name: 'Bottle Caps', quantity: 1000 },
+            { name: 'Wine Bottles (750ml)', quantity: 1000 },
+        ],
+        status: 'recieved',
+        total: 1100.0,
+    },
+    {
+        id: 'po_004',
+        supplierId: 'sup_001',
+        supplier: 'VinoCraft Co.',
+        date: '2025-05-31',
+        items: [
+            { name: 'Wine Bottles (750ml)', quantity: 1000 },
+            { name: 'Bottle Caps', quantity: 1000 },
+        ],
+        status: 'draft',
+        total: 1100.0,
     },
 ];
 
-export const suppliers = [
+export const suppliers: Supplier[] = [
     {
         id: 'sup_001',
         name: 'VinoCraft Co.',
-        contact: 'vinocraft@example.com',
+        email: 'vinocraft@example.com',
         phone: '+1-234-567-890',
         address: '123 Wine Valley Rd, Napa, CA',
+        website: 'https://www.vino-craft.com',
+    },
+    {
+        id: 'sup_002',
+        name: 'VinoVine Co.',
+        email: 'vinovine@example.com',
+        phone: '+1-234-567-891',
+        address: '456 Grape Lane, Sonoma, CA',
+        website: 'https://www.vino-vine.com',
     },
 ];
 

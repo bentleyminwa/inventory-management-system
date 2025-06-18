@@ -1,3 +1,4 @@
+import PurchaseList from '@/components/purchases/purchase-list';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
@@ -24,6 +25,8 @@ export default function PurchaseOrdersPage() {
                     <Button>Create Order</Button>
                 </div>
             </header>
+
+            <PurchaseList />
         </section>
     );
 }
