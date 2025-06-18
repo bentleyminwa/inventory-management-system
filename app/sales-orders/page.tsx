@@ -4,29 +4,6 @@ import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { Search } from 'lucide-react';
 
-const orderStatus = [
-    {
-        label: 'All',
-        value: 'all',
-    },
-    {
-        label: 'New',
-        value: 'new',
-    },
-    {
-        label: 'Confirmed',
-        value: 'confirmed',
-    },
-    {
-        label: 'Shipped',
-        value: 'shipped',
-    },
-    {
-        label: 'Delivered',
-        value: 'delivered',
-    },
-];
-
 export default function SalesPage() {
     return (
         <section>
@@ -49,30 +26,7 @@ export default function SalesPage() {
                 </div>
             </header>
 
-            {/* Sales Orders */}
-            <section>
-                <div className='space-y-2 mb-7'>
-                    <h3 className='text-sm text-muted-foreground font-semibold'>
-                        Status
-                    </h3>
-                    <ul className='flex items-center gap-2'>
-                        {orderStatus.map((status) => {
-                            return (
-                                <li key={status.value}>
-                                    <Button
-                                        variant={'outline'}
-                                        className='cursor-pointer'
-                                    >
-                                        {status.label}
-                                    </Button>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </div>
-
-                <SalesList />
-            </section>
+            <SalesList />
         </section>
     );
 }

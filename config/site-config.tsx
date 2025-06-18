@@ -69,3 +69,26 @@ export const dashboardLinks = [
         description: 'Vendors we order from',
     },
 ];
+
+export const orderStatus = [
+    {
+        label: 'All',
+        value: 'all',
+    },
+    {
+        label: 'New',
+        value: 'new',
+    },
+    {
+        label: 'Confirmed',
+        value: 'confirmed',
+    },
+    {
+        label: 'Shipped',
+        value: 'shipped',
+    },
+    {
+        label: 'Delivered',
+        value: 'delivered',
+    },
+];

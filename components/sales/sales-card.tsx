@@ -6,21 +6,12 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 
+import { Sale } from '@/types';
 import Link from 'next/link';
 import { Separator } from '../ui/separator';
 
 interface SalesCardProps {
-    sale: {
-        id: string;
-        customerName: string;
-        date: string;
-        items: {
-            wineId: string;
-            quantity: number;
-        }[];
-        total: number;
-        status: string;
-    };
+    sale: Sale;
 }
 
 const SalesCard = ({ sale }: SalesCardProps) => {

@@ -1,3 +1,5 @@
+import { Sale } from '@/types';
+
 export const wines = [
     {
         id: 'wine_1',
@@ -61,7 +63,7 @@ export const wines = [
     },
 ];
 
-export const sales = [
+export const sales: Sale[] = [
     {
         id: 'so_001',
         customerName: 'Olive Grove Bistro',
@@ -112,6 +114,7 @@ export const purchaseOrders = [
     {
         id: 'po_001',
         supplierId: 'sup_001',
+        supplier: 'VinoCraft Co.',
         date: '2025-05-28',
         items: [
             { itemName: 'Oak Barrels', quantity: 10 },
