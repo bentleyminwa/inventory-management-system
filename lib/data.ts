@@ -169,6 +169,7 @@ export const suppliers: Supplier[] = [
         phone: '+1-234-567-890',
         address: '123 Wine Valley Rd, Napa, CA',
         website: 'https://www.vino-craft.com',
+        coverImage: '/images/sp-1.png',
     },
     {
         id: 'sup_002',
@@ -177,6 +178,7 @@ export const suppliers: Supplier[] = [
         phone: '+1-234-567-891',
         address: '456 Grape Lane, Sonoma, CA',
         website: 'https://www.vino-vine.com',
+        coverImage: '/images/sp-2.png',
     },
 ];
 
