@@ -51,7 +51,7 @@ export default function Dashboard() {
                     onClick={() => toggleViewTab(0)}
                 >
                     <span>
-                        <List />
+                        <List className='w-4 h-4' />
                     </span>
                     Inventory
                 </h3>
@@ -66,7 +66,7 @@ export default function Dashboard() {
                     onClick={() => toggleViewTab(1)}
                 >
                     <span>
-                        <ChartColumn />
+                        <ChartColumn className='w-4 h-4' />
                     </span>
                     Reporting
                 </h3>
