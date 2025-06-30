@@ -12,7 +12,7 @@ export default function Logo({ panelOpen, setPanelOpen }: LogoProps) {
     };
 
     const renderedPanel = panelOpen ? (
-        <div className='flex items-start gap-3'>
+        <div className='flex justify-between items-start'>
             <Image
                 src={'/images/gran-cielo.png'}
                 alt='Gran Cielo brand logo'
