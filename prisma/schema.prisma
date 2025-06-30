@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Wine {
+  id           String  @id @default(cuid())
+  name         String  @unique
+  type         String
+  vintage      Int
+  stock        Int
+  status       String
+  bottleSize   String
+  pricePerUnit Decimal @default(0.00)
+  // imageSrc     ImageSrc?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// model ImageSrc {
+//   id     String @id @default(cuid())
+//   small  String
+//   medium String
+//   large  String
+
+//   wineId String @unique
+//   wine   Wine   @relation(fields: [wineId], references: [id])
+// }
