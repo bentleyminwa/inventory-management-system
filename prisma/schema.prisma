@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
   output   = "../lib/generated/prisma"
@@ -25,13 +22,3 @@ model Wine {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
-
-// model ImageSrc {
-//   id     String @id @default(cuid())
-//   small  String
-//   medium String
-//   large  String
-
-//   wineId String @unique
-//   wine   Wine   @relation(fields: [wineId], references: [id])
-// }
