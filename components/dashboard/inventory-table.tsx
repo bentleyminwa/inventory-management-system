@@ -21,7 +21,7 @@ export default async function InventoryTable() {
                     <TableHead>Product Image</TableHead>
                     <TableHead>Product Name </TableHead>
                     <TableHead>Sale Price(&pound;)</TableHead>
-                    <TableHead>Units Avavilable</TableHead>
+                    <TableHead>Units Available</TableHead>
                     <TableHead>Status</TableHead>
                 </TableRow>
             </TableHeader>
