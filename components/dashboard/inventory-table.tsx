@@ -7,10 +7,12 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { wines } from '@/lib/data';
-import Image from 'next/image';
+import { prisma } from '@/prisma/seed';
+// import Image from 'next/image';
 
-export default function InventoryTable() {
+export default async function InventoryTable() {
+    const wines = await prisma.wine.findMany();
+
     return (
         <Table className='border'>
             <TableCaption>Overview of your Inventory</TableCaption>
@@ -27,13 +29,13 @@ export default function InventoryTable() {
                 {wines.map((wine) => (
                     <TableRow key={wine.id}>
                         <TableCell>
-                            <Image
+                            {/* <Image
                                 src={wine.imageSrc.small}
                                 alt={wine.name}
                                 width={60}
                                 height={60}
                                 className='rounded-lg'
-                            />
+                            /> */}
                         </TableCell>
                         <TableCell>{wine.name}</TableCell>
                         <TableCell>{wine.pricePerUnit}</TableCell>

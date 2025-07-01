@@ -12,14 +12,14 @@ datasource db {
 }
 
 model Wine {
-  id           String  @id @default(cuid())
-  name         String  @unique
+  id           String @id @default(cuid())
+  name         String @unique
   type         String
   vintage      Int
   stock        Int
   status       String
   bottleSize   String
-  pricePerUnit Decimal @default(0.00)
+  pricePerUnit Float  @default(0.00)
   // imageSrc     ImageSrc?
 
   createdAt DateTime @default(now())

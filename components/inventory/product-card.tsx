@@ -5,25 +5,11 @@ import {
     CardHeader,
     CardTitle,
 } from '@/components/ui/card';
-import Image from 'next/image';
+import { Wine } from '@/lib/generated/prisma';
 import Link from 'next/link';
 
 interface ProductCardProps {
-    wine: {
-        id: string;
-        name: string;
-        imageSrc: {
-            small: string;
-            medium: string;
-            large: string;
-        };
-        type: string;
-        vintage: number;
-        stock: number;
-        status: string;
-        bottleSize: string;
-        pricePerUnit: number;
-    };
+    wine: Wine;
 }
 
 const ProductCard = ({ wine }: ProductCardProps) => {
@@ -32,12 +18,12 @@ const ProductCard = ({ wine }: ProductCardProps) => {
             <Card>
                 <CardHeader>
                     <CardTitle className='w-full h-40 relative'>
-                        <Image
-                            src={wine.imageSrc.medium}
+                        {/* <Image
+                            src={wine.imageSrc.medium || '/images/placeholder.png'}
                             alt={wine.name}
                             fill
                             className='object-cover'
-                        />
+                        /> */}
                     </CardTitle>
                     <CardDescription className='border border-accent-foreground w-fit p-1 rounded-md text-xs font-semibold absolute mt-2 ml-2 bg-background text-primary'>
                         {wine.status}
